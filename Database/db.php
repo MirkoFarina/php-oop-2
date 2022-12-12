@@ -5,7 +5,7 @@ require_once __DIR__ . '/../models/Product.php';
 require_once __DIR__ . '/../models/Food.php';
 require_once __DIR__ . '/../models/Hygiene.php';
 require_once __DIR__ . '/../models/Toy.php';
-require_once __DIR__ . '/../models/Hygiene.php';
+require_once __DIR__ . '/../models/Accessory.php';
 
 
 $dog = new Category(
@@ -94,5 +94,51 @@ $toys = [
         'Piccoli'
     )
 ];
+
+$hygiene = [
+    new Hygiene(
+        855522,
+        'Toilette',
+        'Farm Company',
+        $cat,
+        23,
+        'https://animalsplanet.it/wp-content/uploads/2022/04/toilette-per-gatti-chiusa-farm-company-romeo-ecoline-con-porta-e-filtro-colore-azzurro-57x39x14cm.jpg',
+        'Toilette Chiusa'
+    ),
+    new Hygiene(
+        4984651,
+        'Salviette',
+        'Inodorina',
+        $dog,
+        4,
+        'https://animalsplanet.it/wp-content/uploads/2021/04/salviette-per-cani-inodorina-green-con-lino-e-rosmarino-30pz.jpg',
+        'Salviette'
+    )
+];
+
+$accessories = [
+    new Accessory(
+        89847484,
+        'Cuccia',
+        'Nasonero',
+        $dog,
+        20,
+        'https://animalsplanet.it/wp-content/uploads/2021/12/cuccia-divano-per-cani-nasonero-con-disegno-di-cagnolini-colore-grigio-52x42cm.jpg',
+        'Tessuto',
+        '52x42'
+    ),
+    new Accessory(
+        898454,
+        'Cuccia',
+        'Nasonero',
+        $cat,
+        45,
+        'https://animalsplanet.it/wp-content/uploads/2021/12/cuccia-igloo-per-gatti-nasonero-trama-blu-40x40x40cm.jpg',
+        'Tessuto',
+        '40x40x40'
+    )
+];
 var_dump($foods);
 var_dump($toys);
+var_dump($hygiene);
+var_dump($accessories);

@@ -1,7 +1,7 @@
 <?php 
 
 
-class Accessories extends Product {
+class Accessory extends Product {
     public $material;
     public $size;
 
