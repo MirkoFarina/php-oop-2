@@ -140,3 +140,4 @@ $accessories = [
 ];
 
 $allProducts = array_merge($foods, $accessories, $toys, $hygiene);
+
