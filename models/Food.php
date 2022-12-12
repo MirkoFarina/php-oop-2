@@ -3,7 +3,7 @@
 class Food extends Product {
     public $weight;
     public $ingredients;
-    private $size;
+    public $size;
 
     /**
      * @param Number $_id
@@ -27,14 +27,10 @@ class Food extends Product {
     public function setSize($_size){
         if(is_numeric($_size)){
             if($_size < 12 ) {
-                $this->size = 'Puppy';
+                $this->size = 'Piccoli';
             }else {
-                $this->size = 'Adult';
+                $this->size = 'Grandi';
             }
         }
-    }
-
-    public function getSize() {
-        return $this->size;
     }
 }

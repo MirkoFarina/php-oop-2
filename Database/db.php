@@ -32,7 +32,7 @@ $foods = [
         $dog, 
         11, 
         'https://animalsplanet.it/wp-content/uploads/2021/10/crocchette-per-cani-adulti-prolife-smart-taglia-piccola-gusto-trota-e-riso-2kg.jpg',
-        2,
+        '2kg',
         'Trota e Riso',
         18
     ),
@@ -43,7 +43,7 @@ $foods = [
         $dog,
         18,
         'https://animalsplanet.it/wp-content/uploads/2022/04/crocchette-per-cani-cuccioli-natures-protection-superior-care-per-manto-bianco-gusto-salmone-15kg-2.jpg',
-        1.5,
+        '1.5kg',
         'Salmone',
         10
     ),
@@ -54,7 +54,7 @@ $foods = [
         $cat,
         6,
         'https://animalsplanet.it/wp-content/uploads/2021/04/cibo-per-gatti-adulti-sterilizzati-libra-sterilized-gusto-pollo-15kg.jpg',
-        1.5,
+        '1.5kg',
         'Pollo',
         13
     ),
@@ -65,7 +65,7 @@ $foods = [
         $fish,
         2,
         'https://animalsplanet.it/wp-content/uploads/2022/04/mangime-per-pesci-rossi-tetra-goldfish-100ml.jpg',
-        100 . 'ml',
+        '100ml',
         null,
         null
     )
@@ -139,6 +139,4 @@ $accessories = [
     )
 ];
 
-$allProducts = [ 'food' =>  $foods, 'hygiene' => $hygiene, 'toys' => $toys, 'accesories' => $accessories];
-
-var_dump($allProducts);
+$allProducts = array_merge($foods, $accessories, $toys, $hygiene);
