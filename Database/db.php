@@ -138,7 +138,7 @@ $accessories = [
         '40x40x40'
     )
 ];
-var_dump($foods);
-var_dump($toys);
-var_dump($hygiene);
-var_dump($accessories);
+
+$allProducts = [ 'food' =>  $foods, 'hygiene' => $hygiene, 'toys' => $toys, 'accesories' => $accessories];
+
+var_dump($allProducts);
