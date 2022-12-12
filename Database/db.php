@@ -24,7 +24,7 @@ $fish = new Category(
 );
 
 
-$food = [
+$foods = [
     new Food(
         155523, 
         'Crocchette', 
@@ -71,4 +71,28 @@ $food = [
     )
 ];
 
-var_dump($food);
+
+$toys = [
+    new Toy(
+        8789784,
+        'Gioco da masticare',
+        'atopo',
+        $dog,
+        19,
+        'https://m.media-amazon.com/images/G/29/apparel/rcxgs/tile._CB483369964_.gif',
+        'Gioco interattivo',
+        'Grandi e Piccoli'
+    ),
+    new Toy(
+        8489454,
+        'Gioco',
+        'Goldge',
+        $cat,
+        11,
+        'https://m.media-amazon.com/images/G/29/apparel/rcxgs/tile._CB483369964_.gif',
+        'Gioco Interattivo',
+        'Piccoli'
+    )
+];
+var_dump($foods);
+var_dump($toys);
