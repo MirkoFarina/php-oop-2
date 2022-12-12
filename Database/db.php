@@ -18,9 +18,9 @@ $cat = new Category(
     'https://banner2.cleanpng.com/20180622/jzb/kisspng-cat-computer-icons-pet-5b2d8211e134c4.3453259815297090739225.jpg'
 );
 
-$horse = new Category(
-    'Cavalli',
-    'https://banner2.cleanpng.com/20180206/zvq/kisspng-horse-icon-horse-silhouette-vector-5a79595cb22680.4449623615179021727297.jpg'
+$fish = new Category(
+    'Pesci',
+    'https://c8.alamy.com/compit/p2a1yy/pesce-icona-vettore-isolato-su-sfondo-trasparente-pesce-concetto-del-logo-p2a1yy.jpg'
 );
 
 
@@ -46,6 +46,28 @@ $food = [
         1.5,
         'Salmone',
         10
+    ),
+    new Food(
+        45612,
+        'Crocchette',
+        'Libra',
+        $cat,
+        6,
+        'https://animalsplanet.it/wp-content/uploads/2021/04/cibo-per-gatti-adulti-sterilizzati-libra-sterilized-gusto-pollo-15kg.jpg',
+        1.5,
+        'Pollo',
+        13
+    ),
+    new Food(
+        89561,
+        'Mangime',
+        'Goldfish',
+        $fish,
+        2,
+        'https://animalsplanet.it/wp-content/uploads/2022/04/mangime-per-pesci-rossi-tetra-goldfish-100ml.jpg',
+        100 . 'ml',
+        null,
+        null
     )
 ];
 

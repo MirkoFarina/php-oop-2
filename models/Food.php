@@ -4,7 +4,6 @@ class Food extends Product {
     public $weight;
     public $ingredients;
     private $size;
-    public $is_croquettes = true;
 
     /**
      * @param Number $_id
