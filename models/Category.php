@@ -10,7 +10,7 @@ class Category {
      */
     public function __construct($_name, $_icon)
     {
-        $this->$_name;
-        $this->$_icon;
+        $this->name = $_name;
+        $this->icon = $_icon;
     }
 }
